@@ -66,7 +66,7 @@ function App() {
         {tasks.map((ele) => {
           const { id, task, ed } = ele
           return (
-            <li key={id}>
+            <li className="list" key={id}>
               {isEdit && ed ? (
                 <>
                   <input
@@ -74,7 +74,7 @@ function App() {
                     type="text"
                     value={edit}
                     onChange={(e) => setEdit(e.target.value)}
-                  />
+                  />{' '}
                   <button
                     className="saveTask"
                     disabled={togg}
@@ -85,10 +85,10 @@ function App() {
                 </>
               ) : (
                 <>
-                  {task}
+                  {task}{' '}
                   <button className="delete" onClick={() => remove(id)}>
                     Delete
-                  </button>
+                  </button>{' '}
                   <button className="edit" onClick={() => change(id)}>
                     Edit
                   </button>
