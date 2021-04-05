@@ -70,7 +70,7 @@ function App() {
               {isEdit && ed ? (
                 <>
                   <input
-                    className="editTask "
+                    className="editTask"
                     type="text"
                     value={edit}
                     onChange={(e) => setEdit(e.target.value)}
@@ -86,10 +86,10 @@ function App() {
               ) : (
                 <>
                   {task}
-                  <button className="delete " onClick={() => remove(id)}>
+                  <button className="delete" onClick={() => remove(id)}>
                     Delete
                   </button>
-                  <button className="edit " onClick={() => change(id)}>
+                  <button className="edit" onClick={() => change(id)}>
                     Edit
                   </button>
                 </>
