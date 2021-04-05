@@ -76,7 +76,7 @@ function App() {
                     onChange={(e) => setEdit(e.target.value)}
                   />
                   <button
-                    className="saveTask "
+                    className="saveTask"
                     disabled={togg}
                     onClick={() => update(id)}
                   >
